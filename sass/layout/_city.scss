@@ -1,0 +1,17 @@
+.city{
+    display: flex;
+    justify-content: center;
+    background-color: #ede7e7;
+            & p{
+             width: auto;
+             font-weight:600;
+             color: #5b5959;
+             margin: 15px 0;
+            }
+            & .icons{
+                align-items: center;
+                margin-top: 15px;
+                margin-right: 20px;
+                font-size: 15px;
+            }
+}

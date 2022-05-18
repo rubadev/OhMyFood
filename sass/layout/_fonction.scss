@@ -1,0 +1,44 @@
+.fonction{
+    counter-reset: liste;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    & ol{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        & li{
+            background-color:  #f6f6f6;
+            padding: 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            width: 90%;
+            text-align:left;
+            list-style-type: none;
+            position: relative;
+            @include box-shadow($color-shadow);
+            &:hover{
+                @include animation;
+            }
+            &::before{
+                content: "" counter(liste);
+                counter-increment: liste;
+                color: white;
+                background-color: $color-primary;
+                border-radius: 50%;
+                padding: 5px 8px;
+                font-size: x-small;
+                position: absolute;
+                left: -12px;
+                bottom: 18px;
+                
+            }
+            & i{
+                margin-right: 25px;
+                margin-left: 5px;
+                color: darken($color-back, 40%) ;
+            }
+        }
+        
+    }
+}
