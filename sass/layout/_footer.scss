@@ -1,0 +1,29 @@
+footer{
+    color:white;
+    background-color: $color-back-footer;
+    padding: 25px;
+    & h3{
+        font-family: "Shrikhand" ,sans-serif;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    & .foot-flex{
+        display: flex;
+        align-items: center;
+        height: 25px;
+        & i{
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: small;
+        }
+    }
+    & p{
+        color: white;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    & a{
+        color: white;
+    }
+}
