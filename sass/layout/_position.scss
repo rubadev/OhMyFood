@@ -7,19 +7,18 @@
     background-color: $color-back;
 
     & p{
-        width: 90%;
+        width: 70%;
         margin: 15px auto;
         margin-bottom: 20px;
-        color: #8b8585;
     }
     & h2{
-        width: 70%;
+        width: 60%;
         margin: auto;
         margin-top: 25px;
     
     }
     & button{
-        width:50%;
+        width:45%;
         height: 45px;
         margin:25px auto;
         color:white;
@@ -31,6 +30,7 @@
         &:hover{
            @include animation;
         }
+        
     }
 
 }

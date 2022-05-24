@@ -5,7 +5,7 @@
             & p{
              width: auto;
              font-weight:600;
-             color: #5b5959;
+             color: darken($color-p, 30%);
              margin: 15px 0;
             }
             & .icons{

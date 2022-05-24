@@ -1,12 +1,14 @@
 .fonction{
     counter-reset: liste;
     margin-left: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     & ol{
         display: flex;
-        flex-direction: column;
         gap: 20px;
         padding-left: 20px;
+        @media (max-width:850px) {
+            flex-wrap: wrap;
+        }
         & li{
             background-color:  #f6f6f6;
             padding: 20px;
@@ -18,7 +20,11 @@
             position: relative;
             @include box-shadow($color-shadow);
             &:hover{
-                @include animation;
+                background-color: lighten($color-primary, 35%);
+                i{
+                    color:$color-primary ;
+                }
+
             }
             &::before{
                 content: "" counter(liste);
@@ -34,11 +40,11 @@
                 
             }
             & i{
-                margin-right: 25px;
+                margin-right: 15px;
                 margin-left: 5px;
                 color: darken($color-back, 40%) ;
             }
         }
-        
+                
     }
 }
