@@ -6,16 +6,25 @@
 
 body {
   font-family: "roboto", sans-serif;
-  max-width: 400px;
+  max-width: 1000px;
   margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  color: #8b8585;
 }
 
 header {
   position: relative;
   text-align: center;
   margin-top: 15px;
-  padding-bottom: 15px;
-  box-shadow: 0 3px 3px #cbc9c9;
+  padding-bottom: 10px;
+  box-shadow: 0 3px 1px #cbc9c9;
 }
 
 .logo {
@@ -28,25 +37,24 @@ header {
   background-color: #f3f3f3;
 }
 .position p {
-  width: 90%;
+  width: 70%;
   margin: 15px auto;
   margin-bottom: 20px;
-  color: #8b8585;
 }
 .position h2 {
-  width: 70%;
+  width: 60%;
   margin: auto;
   margin-top: 25px;
 }
 .position button {
-  width: 50%;
+  width: 45%;
   height: 45px;
   margin: 25px auto;
   color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
   border: none;
-  box-shadow: 1px 2px 3px 1px #c1bdbd;
+  box-shadow: 1px 0 3px 0 #c1bdbd;
   font-size: 15px;
 }
 .position button:hover {
@@ -62,7 +70,7 @@ header {
 .city p {
   width: auto;
   font-weight: 600;
-  color: #5b5959;
+  color: #3d3a3a;
   margin: 15px 0;
 }
 .city .icons {
@@ -75,13 +83,17 @@ header {
 .fonction {
   counter-reset: liste;
   margin-left: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .fonction ol {
   display: flex;
-  flex-direction: column;
   gap: 20px;
   padding-left: 20px;
+}
+@media (max-width: 850px) {
+  .fonction ol {
+    flex-wrap: wrap;
+  }
 }
 .fonction ol li {
   background-color: #f6f6f6;
@@ -92,11 +104,13 @@ header {
   text-align: left;
   list-style-type: none;
   position: relative;
-  box-shadow: 1px 2px 3px 1px #c1bdbd;
+  box-shadow: 1px 0 3px 0 #c1bdbd;
 }
 .fonction ol li:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
+  background-color: #f2eafb;
+}
+.fonction ol li:hover i {
+  color: #9356DC;
 }
 .fonction ol li::before {
   content: "" counter(liste);
@@ -118,16 +132,22 @@ header {
 
 .restaurent {
   background-color: #f3f3f3;
-  padding-top: 40px;
+  padding: 40px 0;
 }
 .restaurent h2 {
   padding-left: 20px;
 }
 .restaurent .menu_cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 600px) {
+  .restaurent .menu_cards {
+    flex-direction: column;
+  }
 }
 .restaurent .menu_cards .new {
   position: relative;
@@ -146,10 +166,15 @@ header {
   font-weight: 500;
 }
 .restaurent .menu_cards .card {
-  width: 90%;
-  height: 250px;
+  width: 40%;
+  height: 240px;
   background-color: white;
   border-radius: 15px;
+}
+@media (max-width: 600px) {
+  .restaurent .menu_cards .card {
+    width: 90%;
+  }
 }
 .restaurent .menu_cards .card img {
   width: 100%;
@@ -160,10 +185,72 @@ header {
 .restaurent .menu_cards .card h3 {
   margin: 10px 15px;
   margin-bottom: 0;
+  height: 20px;
 }
 .restaurent .menu_cards .card p {
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 0;
+  color: #4a4646;
+}
+.restaurent .menu_cards .card .card-explication {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  position: relative;
+}
+.restaurent .menu_cards .card .card-explication i {
+  margin-right: 25px;
+  margin-top: 8px;
+  font-size: 30px;
+}
+.restaurent .menu_cards .card .card-explication .far {
+  display: inline;
+  position: absolute;
+  right: 0;
+}
+.restaurent .menu_cards .card .card-explication .fas {
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+.restaurent .menu_cards .card .card-explication:hover .fas {
+  opacity: 1;
+}
+.restaurent .menu_cards .card .card-explication:hover .far {
+  opacity: 0;
+}
+
+footer {
+  color: white;
+  background-color: #3d3939;
+  padding: 25px;
+}
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+footer .foot-flex {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+footer .foot-flex i {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: small;
+}
+footer p {
+  color: white;
+  margin: 0;
+  margin-bottom: 10px;
+}
+footer a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

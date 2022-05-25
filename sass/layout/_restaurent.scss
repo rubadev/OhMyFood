@@ -1,14 +1,19 @@
 .restaurent{
     background-color: $color-back;
-    padding-top: 40px;
+    padding: 40px 0;
+
     & h2{
         padding-left: 20px;
     }
     & .menu_cards{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 15px;
+        justify-content: center;
+        gap: 30px;
+        @media (max-width:600px) {
+            flex-direction: column;
+        }
         & .new{
             position: relative;
             &::before{
@@ -26,10 +31,13 @@
             }
         }
         & .card{
-            width: 90%;
-            height: 250px;
+            width: 40%;
+            height: 240px;
             background-color: $color-cards;
             border-radius: 15px;
+            @media (max-width:600px) {
+               width: 90%;
+            }
             & img{
                 width: 100%;
                 height: 70%;
@@ -39,10 +47,43 @@
             & h3{
                 margin: 10px 15px;
                 margin-bottom: 0;
+                height:20px;
             }
             & p{
                 margin-left: 15px;
-                margin-top: 5px;
+                margin-top: 0;
+                color: darken($color-p, 25%);
+            }
+            & .card-explication{
+                display: flex;
+                justify-content: space-between;
+                height: 35px;
+                position: relative;
+                & i{
+                    margin-right: 25px;
+                    margin-top: 8px;
+                    font-size: 30px; 
+
+                }
+                & .far{
+                    display: inline;
+                    position: absolute;
+                    right: 0;
+                }  
+                & .fas{
+                    color:transparent;
+                    background-image: linear-gradient($color-secendry ,$color-primary);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    opacity: 0;
+                    transition: all 300ms ease-in;
+                    }
+                &:hover .fas{
+                    opacity: 1;
+                     }   
+                &:hover .far{
+                        opacity: 0;
+                        }
             }
         }
     }
