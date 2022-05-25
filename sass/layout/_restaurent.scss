@@ -51,12 +51,17 @@
             }
             & p{
                 margin-left: 15px;
+<<<<<<< HEAD
                 margin-top: 0;
+=======
+                margin-top: 5px;
+>>>>>>> refs/remotes/origin/main
                 color: darken($color-p, 25%);
             }
             & .card-explication{
                 display: flex;
                 justify-content: space-between;
+<<<<<<< HEAD
                 height: 35px;
                 position: relative;
                 & i{
@@ -84,6 +89,14 @@
                 &:hover .far{
                         opacity: 0;
                         }
+=======
+                height: 30px;
+                & i{
+                    margin-right: 25px;
+                    margin-top: 15px;
+                    font-size: 30px;
+                }
+>>>>>>> refs/remotes/origin/main
             }
         }
     }

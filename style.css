@@ -125,7 +125,7 @@ header {
   bottom: 18px;
 }
 .fonction ol li i {
-  margin-right: 25px;
+  margin-right: 15px;
   margin-left: 5px;
   color: #8d8d8d;
 }
@@ -189,12 +189,17 @@ header {
 }
 .restaurent .menu_cards .card p {
   margin-left: 15px;
+<<<<<<< HEAD
   margin-top: 0;
+=======
+  margin-top: 5px;
+>>>>>>> refs/remotes/origin/main
   color: #4a4646;
 }
 .restaurent .menu_cards .card .card-explication {
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
   height: 35px;
   position: relative;
 }
@@ -222,6 +227,15 @@ header {
 .restaurent .menu_cards .card .card-explication:hover .far {
   opacity: 0;
 }
+=======
+  height: 30px;
+}
+.restaurent .menu_cards .card .card-explication i {
+  margin-right: 25px;
+  margin-top: 15px;
+  font-size: 30px;
+}
+>>>>>>> refs/remotes/origin/main
 
 footer {
   color: white;
