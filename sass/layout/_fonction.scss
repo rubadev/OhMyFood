@@ -5,8 +5,8 @@
     & ol{
         display: flex;
         gap: 20px;
-        padding-left: 20px;
-        @media (max-width:850px) {
+        padding: 0 20px;
+        @media (max-width:880px) {
             flex-wrap: wrap;
         }
         & li{
@@ -40,7 +40,7 @@
                 
             }
             & i{
-                margin-right: 15px;
+                margin-right: 25px;
                 margin-left: 5px;
                 color: darken($color-back, 40%) ;
             }

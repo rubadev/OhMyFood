@@ -5,3 +5,11 @@
     transform: scale(1.1);
     opacity: 0.8;
 }
+@mixin heart {
+     color:transparent;
+     background-image: linear-gradient($color-secendry ,$color-primary);
+     -webkit-background-clip: text;
+     background-clip: text;
+     opacity: 0;
+     transition: all 300ms ease-in;
+}

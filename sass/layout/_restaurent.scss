@@ -1,3 +1,5 @@
+@import "../utils/mixin";
+
 .restaurent{
     background-color: $color-back;
     padding: 40px 0;
@@ -51,17 +53,12 @@
             }
             & p{
                 margin-left: 15px;
-<<<<<<< HEAD
-                margin-top: 0;
-=======
                 margin-top: 5px;
->>>>>>> refs/remotes/origin/main
                 color: darken($color-p, 25%);
             }
             & .card-explication{
                 display: flex;
                 justify-content: space-between;
-<<<<<<< HEAD
                 height: 35px;
                 position: relative;
                 & i{
@@ -74,14 +71,9 @@
                     display: inline;
                     position: absolute;
                     right: 0;
-                }  
+                }
                 & .fas{
-                    color:transparent;
-                    background-image: linear-gradient($color-secendry ,$color-primary);
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    opacity: 0;
-                    transition: all 300ms ease-in;
+                    @include heart;
                     }
                 &:hover .fas{
                     opacity: 1;
@@ -89,14 +81,6 @@
                 &:hover .far{
                         opacity: 0;
                         }
-=======
-                height: 30px;
-                & i{
-                    margin-right: 25px;
-                    margin-top: 15px;
-                    font-size: 30px;
-                }
->>>>>>> refs/remotes/origin/main
             }
         }
     }
