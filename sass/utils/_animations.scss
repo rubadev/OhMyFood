@@ -9,11 +9,11 @@
 }
 @keyframes displays {
     0%{
-        transform: translaty(50%);
+        transform: translateY(50%);
         opacity: 0;
     }
     100%{
-        transform: translaty(0);
+        transform: translateY(0);
         opacity: 1;
     }
     

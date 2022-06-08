@@ -29,7 +29,7 @@ body .loader .charge {
   border: 6px solid transparent;
   border-top-color: #FF79DA;
   border-bottom-color: #FF79DA;
-  animation: spiner 3s infinite ease-in-out;
+  animation: spiner 3s infinite linear;
 }
 body .loader .charge::after {
   content: "";
@@ -40,7 +40,7 @@ body .loader .charge::after {
   border: 5px solid transparent;
   border-top-color: #9356DC;
   border-bottom-color: #9356DC;
-  animation: spiner-reverce 2s infinite ease-in-out;
+  animation: spiner-reverce 2s infinite linear;
 }
 
 a {
@@ -373,11 +373,11 @@ main .btn {
 }
 @keyframes displays {
   0% {
-    transform: translaty(50%);
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
-    transform: translaty(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -436,7 +436,7 @@ main .btn {
   overflow: hidden;
   margin-bottom: 15px;
   box-shadow: 1px 0 3px 0 #c1bdbd;
-  animation: displays 2s;
+  animation: displays 3s both;
 }
 .menus .menus-details .menus-items:nth-child(1) {
   animation-delay: 100ms;
@@ -446,9 +446,6 @@ main .btn {
 }
 .menus .menus-details .menus-items:nth-child(3) {
   animation-delay: 300ms;
-}
-.menus .menus-details .menus-items:nth-child(4) {
-  animation-delay: 400ms;
 }
 .menus .menus-details .menus-items .menus-animation {
   display: flex;
@@ -540,11 +537,11 @@ button:hover {
 }
 @keyframes displays {
   0% {
-    transform: translaty(50%);
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
-    transform: translaty(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }

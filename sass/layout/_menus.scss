@@ -30,7 +30,7 @@
             
         }
         & .menus-items{
-            @for $i from 1 through 4 {
+            @for $i from 1 through 3 {
                 &:nth-child(#{$i}){
                     animation-delay: 100ms * $i;
                 }
@@ -43,7 +43,7 @@
             overflow: hidden;
             margin-bottom: 15px;
             @include box-shadow($color-shadow);
-            animation: displays 2s;
+            animation: displays 3s both;
             
             
             & .menus-animation{

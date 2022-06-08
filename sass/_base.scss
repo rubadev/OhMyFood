@@ -28,7 +28,7 @@ body{
            border: 6px solid transparent;
            border-top-color:$color-secendry ;
            border-bottom-color:$color-secendry ;
-           animation: spiner 3s infinite ease-in-out;
+           animation: spiner 3s infinite linear;
            &::after{
             content: "";
             position: absolute;
@@ -38,7 +38,7 @@ body{
             border: 5px solid transparent;
             border-top-color:$color-primary ;
             border-bottom-color:$color-primary ;
-            animation: spiner-reverce 2s infinite ease-in-out;
+            animation: spiner-reverce 2s infinite linear;
            }
        }
         
