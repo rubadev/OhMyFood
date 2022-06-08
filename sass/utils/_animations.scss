@@ -1,0 +1,35 @@
+@keyframes tourner {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
+}
+@keyframes displays {
+    0%{
+        transform: translaty(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translaty(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes disappear {
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes spiner {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes spiner-reverce {
+    to{
+        transform: rotate(-360deg);
+    }
+}

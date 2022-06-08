@@ -1,5 +1,6 @@
 @import "../utils/mixin";
 @import "../utils/variables";
+@import "../utils/buttons";
 
 .position{
     height: 330px;
@@ -16,24 +17,6 @@
         margin: auto;
         margin-top: 25px;
     
-    }
-    & button{
-        width:30%;
-        height: 45px;
-        margin:25px auto;
-        color:white;
-        background-image:linear-gradient($color-secendry ,$color-primary );
-        border-radius: 25px;
-        border: none;
-        @include box-shadow($color-shadow);
-        font-size: 15px;
-        &:hover{
-           @include animation;
-        }
-        @media (max-width:640px) {
-            width: 55%;
-        }
-        
     }
 
 }

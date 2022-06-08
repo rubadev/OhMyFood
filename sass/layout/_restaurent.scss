@@ -75,12 +75,15 @@
                 & .fas{
                     @include heart;
                     }
-                &:hover .fas{
+                &:hover {
+                    cursor: pointer;
+                .fas{
                     opacity: 1;
-                     }   
-                &:hover .far{
-                        opacity: 0;
-                        }
+                     }
+                .far{
+                    opacity: 0;
+                }
+                }
             }
         }
     }

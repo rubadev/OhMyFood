@@ -4,8 +4,24 @@ header{
     margin-top: 15px;
     padding-bottom: 10px;
     box-shadow: 0 3px 1px #cbc9c9;
-}
+    & img{
+        width: 40%;
+    }
+    & a{
+       & .logo {
+        width: 40%;
+        }
+        &::before{
+        content: "\f060";
+        font-weight: 900;
+        display: flex;
+        position: absolute;
+        left: 6%;
+        top:40%;
+        transform: translatey(-50%);
+        font-family: "font awesome 5 free";
+        font-size: x-large;
+         }
+     }
 
-.logo{
-    width:40%;
-}
+    }

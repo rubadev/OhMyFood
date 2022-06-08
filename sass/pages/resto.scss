@@ -1,6 +1,9 @@
 @import "../utils/mixin" ;
 main{
     background-color: $color-back;
+    & .btn{
+        text-align: center;
+    }
 }
 
 .resto_img{
@@ -37,12 +40,15 @@ main{
     & .fas{
             @include heart;
             }
-    &:hover .fas{
+    &:hover {
+        cursor: pointer;
+        .fas{
             opacity: 1;
-             }   
-    &:hover .far{
+            }   
+        .far{
                 opacity: 0;
-                }
+            }
+    }
     }
 
     
