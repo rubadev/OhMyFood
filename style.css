@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 * {
@@ -12,7 +13,7 @@ body {
 body .loader {
   display: flex;
   position: fixed;
-  background-color: #d5f3eb;
+  background-color: #f3f3f3;
   inset: 0;
   z-index: 1;
   opacity: 0.5;
@@ -38,9 +39,27 @@ body .loader .charge::after {
   border-radius: 50px;
   opacity: 0.6;
   border: 5px solid transparent;
-  border-top-color: #9356DC;
-  border-bottom-color: #9356DC;
+  border-top-color: #32b091;
+  border-bottom-color: #32b091;
   animation: spiner-reverce 2s infinite linear;
+}
+body .resto_img .enchantée {
+  height: 900px;
+}
+@media (max-width: 850px) {
+  body .resto_img .enchantée {
+    height: 750px;
+  }
+}
+@media (max-width: 600px) {
+  body .resto_img .enchantée {
+    height: 550px;
+  }
+}
+@media (max-width: 400px) {
+  body .resto_img .enchantée {
+    height: 350px;
+  }
 }
 
 a {
@@ -453,6 +472,10 @@ main .btn {
   margin: 10px;
   width: 100%;
   margin-right: 20px;
+}
+.menus .menus-details .menus-items .menus-animation .flex-prix {
+  width: 85%;
+  text-overflow: ellipsis;
 }
 .menus .menus-details .menus-items .menus-animation .flex-prix h4 {
   font-size: 16px;

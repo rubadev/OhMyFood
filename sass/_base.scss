@@ -12,7 +12,7 @@ body{
     & .loader{
         display: flex;
         position: fixed;
-        background-color: lighten($color-tertiary,15%);
+        background-color: $color-back;
         inset: 0;
         z-index: 1;
         opacity: 0.5;
@@ -36,13 +36,28 @@ body{
             border-radius: 50px;
             opacity: 0.6;
             border: 5px solid transparent;
-            border-top-color:$color-primary ;
-            border-bottom-color:$color-primary ;
+            border-top-color:darken($color-tertiary , 30%);
+            border-bottom-color:darken($color-tertiary , 30%) ;
             animation: spiner-reverce 2s infinite linear;
            }
        }
         
         
+    }
+    & .resto_img{
+        & .enchantée{
+            height: 900px;
+            
+            @media (max-width:850px) {
+                height: 750px;
+            }
+            @media (max-width:600px) {
+                height: 550px;
+            }
+            @media (max-width:400px) {
+                height: 350px;
+            }
+        }
     }
     
 }
