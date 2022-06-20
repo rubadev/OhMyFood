@@ -1,0 +1,18 @@
+@media (max-width:900px) {
+    .menus{
+    flex-direction: column;
+}
+}
+@media (max-width:880px) {
+    ol{
+    flex-wrap: wrap;
+    }
+}
+@media (max-width:600px) {
+    .menu_cards{
+    flex-direction: column;
+    & .card{
+        width: 90%;
+    }
+    }
+}

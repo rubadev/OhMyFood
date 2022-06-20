@@ -6,12 +6,9 @@
     flex-wrap: wrap;
     gap: 15px;
     padding: 0 20px;
-    @media (max-width:733px) {
-        flex-direction: column;
-    }
     
     & .menus-details{
-        width: 335px;
+       min-width: 30%;
         & h3{
             width: auto;
             position: relative;
@@ -30,11 +27,6 @@
             
         }
         & .menus-items{
-            @for $i from 1 through 3 {
-                &:nth-child(#{$i}){
-                    animation-delay: 100ms * $i;
-                }
-            }
             display: flex;
             justify-content: space-between;
             height: 65px;
@@ -43,8 +35,7 @@
             overflow: hidden;
             margin-bottom: 15px;
             @include box-shadow($color-shadow);
-            animation: displays 3s both;
-            
+            transform: translateY(0);
             
             & .menus-animation{
                 display: flex;
@@ -54,8 +45,9 @@
                 margin-right: 20px;
                 
                 & .flex-prix{
-                    width: 85%; 
+                    width: 70%; 
                     text-overflow: ellipsis;
+                    margin: 0;
                     & h4{
                     font-size: 16px;
                     margin:5px;
@@ -71,7 +63,6 @@
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         overflow: hidden;
-                        width: 95%;
                     }
                     
                 }
@@ -82,27 +73,18 @@
                     align-items: flex-end;
                     font-weight: 900;
                     color: darken($color-p, 25%);
+                    margin-left: -85px;
             }
             &:hover{
                 cursor: pointer;
                 .menus-items_check{
-                    margin-right: 0;
+                    margin-right:0;
                      i{
                     animation: tourner 1s ease-in-out;
-                }
-                }
-                .flex-prix{
-                    margin-right: -40px;
-                    & p {
-                        width: 80%;
-                    }
-                    h4{
-                        width: 90%;
                     }
                 }
-                
-                
             }
+            
             & .menus-items_check{
                 width: 70px;
                 background-color: $color-tertiary;
@@ -114,11 +96,13 @@
                 color: white;
                 font-size: 19px;
             }
+        }
 
-
-
-
-
+        @for $i from 1 through 10 {
+            .delay-#{$i} { 
+              animation: displays 6s both;
+              animation-delay:200ms*$i;
+            }
         }
      }
 }
